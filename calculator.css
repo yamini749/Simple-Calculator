@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(360, 10%, 15%);
+}
+
+.main-container {
+  width: 90%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(360, 10%, 20%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.result-container {
+  width: 100%;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  font-size: 3em;
+  text-align: right;
+  background-color: hsl(360, 10%, 20%);
+  color: rgb(241, 241, 240);
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  padding: 5px;
+}
+
+.button-container button {
+  height: 80px;
+  border-radius: 50px;
+  font-size: 2em;
+  background-color: hsl(0, 25%, 98%);
+  border: none;
+  transition: 0.2s;
+}
+
+.button-container button:nth-child(26) {
+  grid-column: 2 / span 3;
+  background-color: rgb(227, 131, 68);
+}
+
+.button-container button:hover {
+  background-color: hsl(30, 20%, 96%);
+  color: rgb(237, 104, 47);
+}
+
+.button-container button:active {
+  background-color: hsl(0, 100%, 99%);
+}
